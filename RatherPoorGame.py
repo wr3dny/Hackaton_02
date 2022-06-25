@@ -24,25 +24,17 @@ def inventory():
     print(items_list)
 
 
-inventory()
-
-
-
-def inventory():
-    items_list = []
-    print('You fund coin')
-    if input()
-    pass
-
-
 def crossroads():
-    picked_direction = input('Please choose Your path: \n'
-                             'Mountains (M) \n'
+    try:
+        picked_direction = input('Mountains (M) \n'
                              'Village (V) \n'
                              'Castle (C) \n'
                              'Forrest (F) \n'
                              '>>>> '
                              )
+    except ValueError:
+        print('Destination not in current version, try again (maybe from list ?)')
+
     if picked_direction.capitalize() == 'M':
         print(f'You travel up the slope of the mountains')
 
@@ -57,6 +49,10 @@ def mountains():
         print('You run off')
         run = 'run'
         return run
+    # elif choice.capitalize() == 'F':
+    #     # fight()
+    # exc
+
 
 
 
@@ -76,7 +72,10 @@ def main():
     hero_name = name_generator()
     he_she = hero_sex(hero_name)
     print(f'{he_she.capitalize()} {hero_name} Your journey beggins' )
-    crossroads()
+    try:
+        crossroads()
+    except (TypeError, ValueError):
+        crossroads()
     if mountains() == 'run':
         crossroads()
     pass
