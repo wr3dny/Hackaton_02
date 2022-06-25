@@ -17,4 +17,4 @@ def main():
     return current_enemy
 
 
-main()
+
