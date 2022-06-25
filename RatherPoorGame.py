@@ -71,14 +71,11 @@ def mountains():
 def main():
     hero_name = name_generator()
     he_she = hero_sex(hero_name)
-    print(f'{he_she.capitalize()} {hero_name} Your journey beggins' )
-    try:
-        crossroads()
-    except (TypeError, ValueError):
-        crossroads()
-    if mountains() == 'run':
-        crossroads()
-    pass
+    hero_inventory = inventory()
+    print(f'{he_she.capitalize()} {hero_name} Your journey beggins\n'
+          f'please pick up where to go')
+
+
 
 
 if __name__ == '__main__':

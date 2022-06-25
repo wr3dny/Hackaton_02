@@ -9,7 +9,17 @@ def fight(enemy, weapon):
         enemy_health = enemy_health - 2
         print(enemy_health)
     else:
-        print(f'Killed {enemy}, gained {random.randint(1,5)} xp')
+        xp = random.randint(1,5)
+        coin = random.randint(0,10)
+        print(f'Killed {enemy}, gained {random.randint(1,5)} xp and {coin} coin(s)')
+
+    return coin
+
 
 
 fight('goblin', 'sword')
+
+def main():
+    fight('wolf', 'bow')
+    coin = fight('wolf', 'bow')
+    print(coin)
