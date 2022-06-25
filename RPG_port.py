@@ -1,16 +1,36 @@
 import random
 
 quest_p1 = ['You can make a few coins unloading ship cargo', 'Help rebuild inn', 'Work as bodyguard in tavern']
+quest_p2 =
+
 
 def port():
-    print(random.choice(quest_p1))
-    choice = input('y/n')
-    i = 0
-    for i <== 0>:
-        if choice.capitalize() == 'y':
-            coin = random.randint(1, 5)
-        elif choice.capitalize() == 'n':
-            print(random.choice(quest_p1))
+    while True:
+        print(random.choice(quest_p1))
+        name_question = input("Want to try ?")
+        name_question = name_question.capitalize()
+        if name_question == "Y":
+            name = True
+            break
+        else:
+            print("\nSo maybe something else.\n")
+
+    coin = random.randint(1, 10)
+
+    while True:
+        print(random.choice(quest_p2))
+        name_question = input("Want to try ?")
+        name_question = name_question.capitalize()
+        if name_question == "Y":
+            name = True
+            break
+        else:
+            print("\nSo maybe something else.\n")
+
+    coin = random.randint(5, 15)
+
+
+
 
 
 

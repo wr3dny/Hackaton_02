@@ -12,9 +12,11 @@ def random_enemy():
     return rg_enemy
 
 
-def main():
-    current_enemy = random_enemy()
-    return current_enemy
+
+#
+# def main():
+#     current_enemy = random_enemy()
+#     return current_enemy
 
 
 
