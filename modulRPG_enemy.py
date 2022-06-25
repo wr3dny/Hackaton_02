@@ -12,16 +12,7 @@ def random_enemy():
     return rg_enemy
 
 
-def mountains():
-    enemy = random_enemy()
-    print(f'On your way you come upon {enemy}')
-    print('Fight or run (r/f)')
-    choice = input()
-    if choice.capitalize() == 'R':
-        print('You run off')
-
-mountains()
 
 
 
-mountains()
+

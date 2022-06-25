@@ -1,0 +1,7 @@
+food: 0 
+weapon: 0 
+gold: 0 
+name: Veja 
+health: 20 
+energy: 20 
+attack: 1 
