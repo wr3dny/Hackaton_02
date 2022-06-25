@@ -11,13 +11,27 @@ def hero_sex(name):
     return he_she
 
 
-def hero_attributes():
+import random
 
-    pass
+loot = ['axe', 'sword', 'battlehammer', 'sling', 'bow', 'crossbow', 'dagger', 'knife']
+
+def inventory():
+    items_list = []
+    new_item = random.choice(loot)
+    print(f'You fund {new_item}')
+    if input("Take y/n ") == 'y':
+        items_list.append(f'{new_item}')
+    print(items_list)
+
+
+inventory()
+
 
 
 def inventory():
     items_list = []
+    print('You fund coin')
+    if input()
     pass
 
 
