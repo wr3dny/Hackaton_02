@@ -18,7 +18,7 @@ while i <= 200:
 
 def name_generator():
     generated_name = []
-    name_lenght = random.randint(2, 4)
+    name_lenght = random.randint(2, 5)
     j = 0
     for j in range(0, name_lenght):
         generated_name.append(random.choice(name_parts))
